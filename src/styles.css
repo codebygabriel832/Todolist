@@ -1,0 +1,112 @@
+* {
+    margin:0;
+    padding:0;
+
+}
+html {
+    height: 100%;;
+}
+body {
+    display:grid;
+    min-height: 100%;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    'header'
+    'main';
+}
+header {
+
+    grid-area: header;
+    background: rgb(241, 230, 230);
+    color:#70686c ;
+    border: 1px;
+    text-align: center;
+    padding-top:20px;
+}
+main {
+
+    /* grid-area:main; */
+    background: #7f8c8d ;
+    border: 1px dashed red;
+}
+#content {
+
+    height:100%;
+
+}
+#content-container {
+    display:grid;
+    grid-template-columns: 250px 250px 250px;
+    gap:15px;
+    margin-top: 10px;
+    padding: 15px;
+}
+.todo-card {
+
+    border: none;
+    border-radius: 15px;
+    min-height:150px;
+    background: #b0b2b3;
+    color:white;
+    font-size:20px;
+    padding:10px;
+}
+.btn-container {
+
+    display:flex;
+    justify-content: space-around;
+}
+.btn {
+
+    min-width: 40px;
+    width:fit-content;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    color:white;
+    margin: 10px;
+    border:none;
+}
+#del_btn {
+    background: #ED0800 ;
+}
+#edit_btn {
+    background: #5783db;
+}
+#complete_btn {
+
+    background: #5dbea3;
+}
+#add_btn {
+    background: #424a93 ;
+}
+#submit_btn{
+    background: #5dbea3;
+}
+select {
+    margin-left:5px;
+}
+form {
+
+    border: 1px;
+    background: #e5e7e9 ;
+    padding:10px;
+    border-radius:15px;
+    width:300px;
+    margin: 10px;
+}
+input, textarea {
+
+    width:100%;
+    box-sizing: border-box;
+    border:none;
+    margin-top:5px;
+    margin-bottom:5px;
+    color:black;
+}
+textarea {
+    resize: none;
+}
+.title-div,.description-div, .duedate-div,.priority-div {
+
+    margin:5px;
+}
